@@ -8,7 +8,7 @@
 print("welcome")
 a = int(input("Enter any numer"))
 if a>10:
-    print()
+    print(a)
 print("Thank You!")
 
 
