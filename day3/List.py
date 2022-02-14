@@ -24,6 +24,8 @@ print(l1[:-2])
 # Index difference
 print(l1[::-1])
 
+#Note : List supports indexing, negative indexing, slicing and stepping same as the string
+
 # Functions of List
 
 l = [1,2,3,4,5,6,7]
