@@ -12,8 +12,8 @@ def Greet(s):
     else:
         print("Hello")
 
-a = Greet(43)
-print("here is a", a)
+# a = Greet(43)
+
 # You use functions in programming to bundle a set of instructions that you want to use repeatedly or that, 
 # because of their complexity, are better self-contained in a sub-program and called when needed. 
 # That means that a function is a piece of code written to carry out a specified task. 
@@ -31,15 +31,47 @@ print("here is a", a)
 
 # No Input No Output
 
+def AddNumber():
+    a = int(input("1st number"))
+    b = int(input("2nd number"))
+    print(a+b)
+
+# AddNumber()
 
 # No Input Yes Output
 
+def AddNumber1():
+    a = int(input("1st number"))
+    b = int(input("2nd number"))
+    return a+b
+
+# ans = AddNumber1()
+# print(ans)
 
 # Yes Input No Output
 
+def AddNumber2(a,b):
+    print(a+b)
+
+
+# AddNumber2(123, 345)
 
 # Yes Input Yes Output
 
+def AddNumber3(a,b):
+    return a+b
+
+# ans = AddNumber3(12,23)
+# print(ans)
+
+
+# Multiple Returns 
+
+def Calc(a,b):
+    return a/b, a*b, a+b, a-b
+
+# A, B, C, D = Calc(10,3)
+# print(A,B,C,D)
 
 
 # an anonymous function may be a function that’s defined without a reputation.
@@ -47,7 +79,13 @@ print("here is a", a)
 # but while defining anonymous functions we are using the lambda keyword.
 
 # A lambda function in python has the subsequent syntax.
+
 # Syntax : lambda arguments: expression
 
+sqr = lambda num: num**2
+print(sqr(15))
+
+cube = lambda num: num**3
+print(cube(3))
 
 # TODO: filter, map, reduce
